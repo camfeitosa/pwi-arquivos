@@ -9,8 +9,6 @@ const pular = () => {
         mario.classList.remove('pular');
     }, 500);
 } 
-document.write(pular)
-
 const loop = setInterval(() => {
     
     const posicaoCano = tubo.offsetLeft;
