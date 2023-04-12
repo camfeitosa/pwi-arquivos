@@ -26,7 +26,7 @@ body {
     bottom: 0;
     width: 80px;
     right: -80px;
-    animation: tubo 2s infinite linear;
+    animation: tubo 1s infinite linear;
 }
 
 .mario {
@@ -57,7 +57,7 @@ body {
 }
 
 .pular {
-    animation: pular 500ms ease-out;
+    animation: pular 700ms ease-out;
 }
 
 @keyframes tubo {
