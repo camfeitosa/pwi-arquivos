@@ -1,15 +1,3 @@
-html,
-body {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    background: rgb(0, 0, 0);
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100%;
-}
-
 .tela {
     width: 50%;
     height: 500px;
@@ -26,7 +14,7 @@ body {
     bottom: 0;
     width: 80px;
     right: -80px;
-    animation: tubo 1s infinite linear;
+    animation: tubo 1.5s infinite linear;
 }
 
 .mario {
