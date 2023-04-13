@@ -44,9 +44,9 @@ body {
 
 .sol {
     position: absolute;
-    width: 100px;
+    width: 300px;
     animation: sol 25s infinite linear;
-    top: 230px;
+    top: 70px;
 }
 
 .nuvem2 {
