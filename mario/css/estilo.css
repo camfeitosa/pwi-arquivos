@@ -44,24 +44,25 @@ body {
 
 .nome {
     position: absolute;
-    width: 100px;
-    animation: nome 15s infinite linear;
+    width: 300px;
+    animation: nome 30s infinite linear;
     top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    color:rgb(0, 130, 14)
 }
 
 .sol {
     position: absolute;
     width: 100px;
-    animation: sol 20s infinite linear;
-    top: 70px;
+    animation: sol 28s infinite linear;
+    top: 90px;
 }
 
 .nuvem2 {
     position: absolute;
     width: 200px;
-    animation: nuvem2voando 30s infinite linear;
+    animation: nuvem2voando 22s infinite linear;
     top: 60px;
 }
 
@@ -73,7 +74,7 @@ body {
 }
 
 .pular {
-    animation: pular 700ms ease-out;
+    animation: pular 600ms ease-out;
 }
 
 @keyframes tubo {
