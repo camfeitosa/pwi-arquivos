@@ -95,6 +95,17 @@ body {
     }
 }
 
+@keyframes sol {
+    from {
+
+        right: -100px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
 @keyframes nuvem2voando {
     from {
 
