@@ -21,7 +21,7 @@ const loop = setInterval(() => {
         monica.style.animation = 'none';
         monica.style.bottom = `${posicaomonica}px`;
 
-        monica.src = './img/fim.png';
+        monica.src = './img/fim.gif';
         clearInterval(loop);
     }
 }, 10)

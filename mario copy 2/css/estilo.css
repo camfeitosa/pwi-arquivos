@@ -4,7 +4,7 @@ body {
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    background: rgb(0, 0, 0);
+    background-image: url('../img/ceu.webp');
     display: grid;
     place-items: center;
     width: 100%;
@@ -12,26 +12,32 @@ body {
 }
 .bt{
     position: absolute;
-    right: 50%;
     font-family: 'Poppins', 'sans-serif';
-    width: 100px;
+    width: 120px;
     height: 50px;
-    border: none;
     border-radius: 5px;
+    border-color: transparent;
     font-size: 16px;
+    top: 100px;
+    cursor: pointer;
+    background: #45afdc;
+}
+.bt:hover{
+    background: transparent;
+    border-color: #45afdc;
+    animation:slidebg 50s linear infinite;
 }
 .tela {
     width: 50%;
     height: 500px;
     margin: 0 auto;
-    border: 5px solid rgb(0, 0, 0);
-    border-bottom: 15px solid rgb(92, 181, 37);
+    border: transparent;
+    border-bottom: 25px solid rgb(92, 181, 37);
     position: relative;
     overflow: hidden;
     background-image: url('../img/ceu.webp');
     background-repeat: no-repeat;
     background-size: 100% 600px;
-   /* background: linear-gradient(#e6f509, #e0f6ff);*/
 }
 
 .tubo {
@@ -43,7 +49,7 @@ body {
 }
 
 .monica {
-    width: 150px;
+    width: 170px;
     position: absolute;
     bottom: 0;
 }
@@ -54,13 +60,6 @@ body {
     animation: nuvem1voando 25s infinite linear;
     top: 230px;
 }
-
-/* .sol {
-    position: absolute;
-    width: 100px;
-    animation: sol 28s infinite linear;
-    top: 90px;
-} */
 
 .nuvem2 {
     position: absolute;
