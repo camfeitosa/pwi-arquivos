@@ -32,7 +32,6 @@ body {
     height: 500px;
     margin: 0 auto;
     border: transparent;
-    border-bottom: 25px solid rgb(92, 181, 37);
     position: relative;
     overflow: hidden;
     background-image: url('../img/ceu.webp');
