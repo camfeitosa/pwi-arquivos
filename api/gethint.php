@@ -12,7 +12,7 @@ $a[] = "How I Met Your Mother";
 
 $q = $_REQUEST["q"];
 
-$thint = "";
+$hint = "";
 
 if($q !== ""){
     $q = strtolower($q);
@@ -30,5 +30,5 @@ if($q !== ""){
 
 
 
-    echo $thin == "" ? "Sem sugestão" : $hint;
+    echo $hint == "" ? "Sem sugestão" : $hint;
 ?>
