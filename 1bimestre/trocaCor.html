@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        var cores = ["purple", "green", "pink"]
+        var i = 0
+        var timer
+        function MudarCorFundo(){
+            document.body.style.background = cores[i]
+            i++
+            if(i >= cores.length){
+                i = 0
+            }
+        }
+            function iniciar(){
+                clearInterval(timer)
+                timer = setInterval(MudarCorFundo, 500)
+            }
+            function parar(){
+                clearInterval(timer)
+                document.getElementById("btn_ini").value = "Continuar"
+            }
+        
+    </script>
+  </head>
+  <body>
+    <input type="button" value="iniciar a troca" id="btn_ini" onclick="iniciar()"><br><br>
+    <input type="button" value="Parar" onclick="parar()"><br><br>
+
+  </body>
+</html>

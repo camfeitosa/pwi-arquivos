@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 10vh;
     background: linear-gradient(120deg, #f6f6f7d8, #4830b5da);
     color:#2b2b2b;
     display: flex;
@@ -23,7 +23,7 @@ body{
     width: 550px;
     
 }
-.menu{
+/* .menu{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -35,7 +35,7 @@ body{
     border-radius: 3px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
         
-}
+} */
 a{
     text-decoration: none;
 }
