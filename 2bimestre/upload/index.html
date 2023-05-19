@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de arquivos</title>
+</head>
+<body>
+    <h1>Upload de arquivos</h1>
+    <form action="" id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="file" id="file"> 
+        <input type="submit" value="Enviar"> 
+    </form>
+
+    <div id="message"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('#uploadForm').submit(function (e){
+                e.preventDefault()
+                var formData = new FormData(this)
+
+                $.ajax({
+                    url:'/api/upload.php',
+                    type: 'POST',
+                    data: FormData,
+                    dataType: 'json',
+                    processData: false,
+                    contentType: false,
+                    success: function(response){
+                        $('#message').html(respose.message)
+                    }
+                })
+            })
+        })
+    </script>
+    
+</body>
+</html>
