@@ -26,7 +26,7 @@
                 $.ajax({
                     url:'/api/upload.php',
                     type: 'POST',
-                    data: FormData,
+                    data: formData,
                     dataType: 'json',
                     processData: false,
                     contentType: false,
@@ -34,7 +34,7 @@
                         $('#message').html(response.message)
                     }
                 })
-            })
+            }) 
         })
     </script>
     
