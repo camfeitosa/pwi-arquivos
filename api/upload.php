@@ -1,17 +1,6 @@
 <?php
-if ($_FILES['file'] ['error'] === UPLOAD_ERR_OK ){
-    $uploadDir = '/2bimestre/upload/images/';
-    $uploadFile = $uploadDir . basename($_FILES['file'] ['name']);
-
-    if (move_uploaded_file($_FILES['file'] ['tmp_name'], $uploadFile)){
-        $response['message'] = 'Arquivo enviado com sucesso';
-    } else {
-        $response['message'] = '[ERRO]';
-    }
-} else {
-    $response['message'] = '[ERRO]';
-}
-
-echo json_encode($response);
-
+  $file_name =  $_FILES['file']['name']; //getting file name
+  $tmp_name = $_FILES['file']['tmp_name']; //getting temp_name of file
+  $file_up_name = time().$file_name; //making file name dynamic by adding time before file name
+  move_uploaded_file($tmp_name, "/2bimestre/upload2/files/".$file_up_name); //moving file to the specified folder with dynamic name
 ?>
