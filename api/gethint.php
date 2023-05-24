@@ -3,6 +3,13 @@
 
 $a[] = "Lucifer";
 $a[] = "You";
+$a[] = "Now You see me";
+$a[] = "Corra";
+$a[] = "Never have I ever";
+$a[] = "Minha mãe é uma peça";
+$a[] = "Titanic";
+$a[] = "As vantagens de ser inisível";
+$a[] = "Call me by your name";
 $a[] = "Friends";
 $a[] = "Euphoria";
 $a[] = "Loki";
