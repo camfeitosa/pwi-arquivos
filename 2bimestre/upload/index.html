@@ -23,7 +23,7 @@
                 var formData = new FormData(this);
 
                 $.ajax({
-                    url:'/api/upload.php',
+                    url:'/api/upload.php?q=',
                     type: 'POST',
                     data: formData,
                     dataType: 'json',
