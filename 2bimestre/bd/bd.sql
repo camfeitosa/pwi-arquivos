@@ -1,4 +1,4 @@
-CREATE DATABASE etec;
+if not exists CREATE DATABASE etec;
 
 USE etec; 
 
