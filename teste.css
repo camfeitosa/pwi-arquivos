@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+h1{
+    position: relative;
+    left: 100px;
+    
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(120deg, #f6f6f7d8, #4830b5da);
+    color:#2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+    width: 700px;
+}
+form{
+    height: 60px;
+    width: 500px;
+    text-align: center;
+    position: abolute;
+    justify-content: center;
+}
+
+/* input[type="file"] {
+    padding: 20px 10px;
+    width: 200px;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+} */
+
+#file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  #file::before {
+    content: 'Selecione';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  #file:hover::before {
+    border-color: black;
+  }
+  #file:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+
+.container a{
+    font-weight: bolder;
+    font-size: 10px;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 2px;
+
+}
+.container input{
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    height: 70px;
+    width: 400px;
+}
+
