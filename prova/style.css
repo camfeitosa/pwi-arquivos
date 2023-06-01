@@ -1,0 +1,8 @@
+#drop_file_zone{
+    background-color: #EEE;
+    border: #999 5 px dashed;
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    font-size: 18px;
+}
