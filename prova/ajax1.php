@@ -1,5 +1,5 @@
 <?php
-$arr_file_types = ['imagem/png', 'imagem/gif','imagem/jpg', 'imagem/jpeg'];
+$arr_file_types = ['image/png', 'image/gif','image/jpg', 'image/jpeg'];
 
 //Verifica o tipo de arquivo
 
@@ -17,11 +17,12 @@ if ($_FILES['file'] ['size'] > $max_file_size ){
 }
 
 if  (!file_exists('uploads')){
-    mkdir('uploas', 0777);
+    mkdir('uploads', 0777);
 }
 $filename = time().'_'.$_FILES['file'] ['name'];
 
-move_uploaded_file($_FILES['file'] ['name']);
+
+move_uploaded_file($_FILES['file'] ['tmp_name'], 'uploads/'.$filename);
 
 echo 'uploads/'.$filename;
 die;

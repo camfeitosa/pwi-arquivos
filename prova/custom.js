@@ -4,7 +4,7 @@ function upload_file(e){
 }
 
 function file_explorer(){
-    document.getElementById('selectfile').click()
+    document.getElementById('selectfile').click();
 }   
     
 document.getElementById('selectfile').onchange = function(){
