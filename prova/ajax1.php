@@ -12,7 +12,7 @@ if(! (in_array($_FILES['file'] ['type'], $arr_file_types))){
 
 $max_file_size = 1 * 1024 * 1024; //1 MB me bytes
 if ($_FILES['file'] ['size'] > $max_file_size ){
-    echo "";
+    echo "Tamanho de arquivo excedido. Tamanho máximo permitido é 1MB.";
     die;
 }
 
@@ -21,7 +21,13 @@ if  (!file_exists('uploads')){
 }
 $filename = time().'_'.$_FILES['file'] ['name'];
 
+move_uploaded_file($_FILES['file'] ['name']);
+
+echo 'uploads/'.$filename;
+die;
+
 //move_uploaded_file()
+
 
 
 ?>
