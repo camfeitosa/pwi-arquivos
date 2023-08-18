@@ -1,0 +1,16 @@
+DROP DATABASE if EXISTS camila;
+CREATE DATABASE camila;
+USE camila;
+
+CREATE TABLE if NOT EXISTS usuario(
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+	nome VARCHAR(255) NULL DEFAULT NULL,
+	senha VARCHAR(255) NULL DEFAULT NULL,
+	telefone VARCHAR(255) NULL DEFAULT NULL,
+	imagem VARCHAR(255) NULL DEFAULT NULL
+);
+
+INSERT INTO usuario VALUES
+(DEFAULT, "Camila", "123", "11 999235682", 'img/fem.png'),
+(DEFAULT, "Murilo", "456", "11 9998765416", 'img/mas.png');
+gckeeperlogin_de_clinica
